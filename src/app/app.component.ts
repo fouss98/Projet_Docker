@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Math_calcul';
+  number1!:number;
+  number2!: number;
+  sum!: number;
+
+  calcul(){
+    this.sum = this.number1+this.number2;
+  }
 }
